@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COL-ROW SPAN</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fafafa;
+        }
+        .table-container {
+            margin: 20px auto;
+            width: 80%;
+        }
+        table {
+            border: 1px solid;
+            width: 100%;
+            background: #fff;
+        }
+        .td1 {
+            border: 1px solid ;
+            text-align: center;
+            font-size: 1em;
+            padding: 4px 0;
+        }
+        div {
+            background: #f9f9f9;
+            margin: auto;
+            max-width: 40%;
+            display: flex;
+            justify-content: right;
+            padding: 1px;
+        }
+        .left {
+            border: 1px solid ;
+            text-align: left;
+            font-size: 1em;
+            padding: 4px 0;
+        }
+    .tabel-inner td {
+        border: 1px double #222;
+        text-align: center;
+        font-size: 1em;
+        }       
+    </style>
+</head>
+<body>
+    <nav class="navbar">    
+  <a href="index.html">Beranda</a>
+  <a href="#">Biodata</a>
+  <a href="form.html">Form</a>
+  <a href="tabel.html">Tabel</a>
+  <a href="layout.html">BOX CSS</a>
+</div>
+    </nav>
+    <h1>COL-ROW SPAN</h1>
+    <div class="table-container">
+        <table>
+       <tr>
+    <td colspan="2" class="td1">1</td>
+    <td colspan="2" class="td1">2</td>
+</tr>
+<tr>
+    <td colspan="2" rowspan="1" class="td1">3</td>
+    <td colspan="2" class="td1" style="padding-left:10px; padding-right:10px;">
+        <table>
+            <tr>
+                <td colspan="2" class="td1">4</td>
+            </tr>
+            <tr>
+                <td class="td1" >5</td>
+                <td class="td1" >6</td>
+            </tr>
+        </table>
+    <tr>
+     <tr>
+      <td colspan="2" class="td1" style="padding-left:10px; padding-right:10px;">
+        <table class="tabel-inner">
+            <tr>
+                <td rowspan="2" style="vertical-align: middle;" class="td1">7</td>
+                <td class="td1">8</td>
+            </tr>
+            <tr>
+                <td class="td1">9</td>
+            </tr>
+        </table>
+    </td>
+      <td class="left">10</td>
+      
+</body>

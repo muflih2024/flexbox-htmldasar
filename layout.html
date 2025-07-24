@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>BOX CSS</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 98%;
+    margin: 20px auto 0 auto;
+}
+.baris {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+.box {
+    background: #ddd;
+    flex: 1;
+    min-height: 150px;
+    padding: 16px;
+}
+.full {
+    background: #b3e0f2;
+    width: 100%;
+    min-height: 150px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .baris {
+        flex-direction: column;
+    }
+    .box {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+    .box {
+        min-height: 100px;
+    }
+    .full {
+        min-height: 100px;
+    }
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a href="index.html">Beranda</a>
+  <a href="#">Biodata</a>
+  <a href="form.html">Form</a>
+  <a href="tabel.html">Tabel</a>
+  <a href="layout.html">BOX CSS</a>
+</div>
+<div class="container">
+  <div class="baris">
+    <div class="box">box 1</div>
+    <div class="box">box 2</div>
+  </div>
+  <div class="full">konten full</div>
+</div>
+</body>
+</html>

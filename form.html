@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Isian</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    
+    table {
+        margin: 0 auto;
+        border-collapse: collapse;
+        width: auto;
+    }
+    
+    td {
+        padding: 6px 10px;
+        text-align: left;
+        vertical-align: top;
+    }
+    
+    input[type="text"], textarea, select {
+        width: 200px;
+        padding: 3px;
+    }
+    
+    textarea {
+        height: 60px;
+    }
+    
+    h1 {
+        text-align: center;
+        border-bottom: 1px solid #000;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    
+    input[type="submit"], input[type="reset"] {
+        padding: 5px 10px;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html">Beranda</a>
+  <a href="#">Biodata</a>
+  <a href="form.html">Form</a>
+  <a href="tabel.html">Tabel</a>
+  <a href="layout.html">BOX CSS</a>
+</div>
+
+<h1>FORM ISIAN</h1>
+
+<form action="#" method="post">
+    <table>
+        <tr>
+            <td>No</td>
+            <td>:</td>
+            <td><input type="text" name="no"></td>
+        </tr>
+        <tr>
+            <td>Nama</td>
+            <td>:</td>
+            <td><input type="text" name="nama" placeholder="masukan Nama"></td>
+        </tr>
+        <tr>
+            <td>Jenis kelamin</td>
+            <td>:</td>
+            <td>
+                <input type="radio" id="pria" name="jenis_kelamin" value="Pria" checked>
+                <label for="pria">Pria</label>
+                <input type="radio" id="wanita" name="jenis_kelamin" value="Wanita">
+                <label for="wanita">Wanita</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Kelas</td>
+            <td>:</td>
+            <td>
+                <input type="radio" id="kelas10" name="kelas" value="10" checked>
+                <label for="kelas10">10</label>
+                <input type="radio" id="kelas11" name="kelas" value="11">
+                <label for="kelas11">11</label>
+                <input type="radio" id="kelas12" name="kelas" value="12">
+                <label for="kelas12">12</label>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Tgl Lahir</td>
+            <td>:</td>
+            <td><input type="date" name="tanggal"></td>
+        </tr>
+        <tr>
+            <td>riwayat pendidikan</td>
+            <td>:</td>
+            <td><textarea name="riwayat"></textarea></td>
+        </tr>
+        <tr>
+            <td>Status</td>
+            <td>:</td>
+            <td>
+                <select name="status">
+                    <option value="" selected disabled>--Pilih Status--</option>
+                    <option value="siswa">Siswa</option>
+                    <option value="mahasiswa">Mahasiswa</option>
+                    <option value="bekerja">Bekerja</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Upload Photo anda</td>
+            <td>:</td>
+            <td><input type="file" name="photo"></td>
+        </tr>
+        <tr>
+            <td>Apa Hobi anda</td>
+            <td>:</td>
+            <td>
+                <input type="checkbox" id="ngegame" name="hobi[]" value="Nge-Game">
+                <label for="ngegame">Nge-Game</label>
+                <input type="checkbox" id="ngoding" name="hobi[]" value="Ngoding">
+                <label for="ngoding">Ngoding</label>
+                <input type="checkbox" id="streaming" name="hobi[]" value="Streaming">
+                <label for="streaming">Streaming</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Alamat anda</td>
+            <td>:</td>
+            <td><textarea name="alamat"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center">
+                <input type="submit" value="Masukan Biodata">
+                <input type="reset" value="HAPUS DATA">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
